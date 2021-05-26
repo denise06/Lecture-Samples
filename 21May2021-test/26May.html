@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p style = "background-color: black; height: 200px; width: 200px;">Test the background display
+    </p>
+<!-- Div is used to group sections  -->
+    <div></div>
+    <!-- Div exist, but doesn't have a height, use style attribute to show the div -->
+    <div></div>
+    <div>   
+        <p>This is a pragraph</p>
+    </div>
+
+    <p style= "background-color: hotpink;">yet another <span style= "background-color: ivory;">para</span>
+    </p>
+    
+    <!-- Forms  -->
+    <!-- emails will check for "@" -->
+    <!-- how to change the error prompt -->
+    <form method="GET">
+        <label>Please share your email:</label>
+        <br>
+        <input type="email"></input> 
+        <br>
+        <label>Please senter your age:</label>
+        <br>
+        <input type="number" name= nickname> 
+        <br>
+        <label>Please senter your nickname:</label>
+        <br>
+        <!-- just add required for validation check -->
+        
+        <input type="text" placeholder="nickname" required> 
+        <br>
+        <label>Please senter your birthday!:</label>
+        <br>
+        <input type="date" placeholder="dd-mm-yyyy">
+        <br>
+        <label>Please upload your evidence:</label>
+        <br>
+        <input type="file">
+        <br>
+        <label>Enter password to continue:</label>
+        <br>
+        <input type="password">
+        <br>
+        <label>Please write a review about me:</label>
+        <br>
+        <textarea rows="5"></textarea>
+        <br>
+        <!-- select/drop down -->
+        <label>Choose your fav colour</label>
+        <br>
+        <select>
+            <option>Black</option>
+            <option>Purple</option>
+            <option>Orange</option>
+        </select>
+        <br>
+        <!-- Radio button -->
+        <!-- add the name part if you don't allow multiple selection, only select 1 -->
+        <label>Who should be the next Prime Minsister</label>
+        <br>
+        <input type="radio" name = "choices"> <label>Recruit Tan</label>
+        <br>
+        <input type="radio" name = "choices"> <label>Tan Ah Bok</label>
+        <br>
+        <!-- Checkboxes, don't need name part for single selection cos user can just uncheck  -->
+        <label>Who should be the next Prime Minsister</label>
+        <br>
+        <input type="checkbox" > <label>Recruit Tan</label>
+        <br>
+        <input type="checkbox"> <label>Tan Ah Bok</label>
+
+
+        <br>
+        <input type="submit">
+
+        <button>camcel</button>
+
+    </form>
+    
+    <!-- Use of # to show relavtive instead of absolute path -->
+    <a href="https://www.trentglobal.edu.sg/" target ="_blank"> About Us</a>
+    <br>
+    <a href="#top">Back to top </a>
+
+    <!-- Alt= Description of the image will appear with the image cannot appear -->
+    <!-- Absolute just google and copy image link -->
+    <!-- when you use style, just define one dimension, then it will auto scale -->
+    <img src="https://img.kyodonews.net/english/public/images/posts/070843bfb17b89b159efe9a0fe9bd04d/cropped_image_l.jpg" alt= "Yuzuru Hanyu" height="500">
+    <br>
+    <img src="https://img.kyodonews.net/english/public/images/posts/070843bfb17b89b159efe9a0fe9bd04d/cropped_image_l.jpg" alt= "Yuzuru Hanyu" style= height:200px;>
+    <img src= "image/grad" alt="graduation photo">
+
+    <!-- can stack the diff video type and system will load going down the row, in the case one fails -->
+    <!-- Include "controls" in the first line to show the play button-->
+    <br>
+    <video style= "height: 100px;" >
+        <source src= "" type ="video/mp4"/>
+        Error, please try another browswer, unsupported
+    </video>
+
+
+</body>
+</html>
