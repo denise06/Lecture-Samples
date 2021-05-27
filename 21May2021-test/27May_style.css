@@ -1,0 +1,21 @@
+/* % to parent element, paraent means the body/ header etc */
+/* vw vh & % are prefered */
+p{
+    background-color: navy;
+    color:white
+}
+/* you can ignore the structure and define all your style parameter here */
+/* order of retrieval based on availability  */
+.a{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-decoration: overline;
+    font-style: italic;
+}
+div{
+    /* 10% of viewing width (vw)*/
+    /* vh, changing the width doesn't get affeted, only relying on the height */
+   height: 10vh; 
+   width: 10vh;
+   background-color: plum;
+}

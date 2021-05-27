@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- personal CSS IMPT: rel stylesheet -->
+<head>
+    <meta charset="UTF-8">
+    <link href ="27May_style.css" rel= "stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<!-- Change all the para to have the smae colour using internal CSS by putting style between head& body-->
+<!-- usng div will focus on al the div, 
+hence using p{} will focus on all the paragraphs -->
+<!-- if you define another background here, it will overwrite your style.css -->
+<!-- inline > internal CSS  > External CSS (style.css) -->
+<style>
+    /* p{
+        background-color: hotpink;
+    } */
+    /* change only one of the paragraphs */
+    #outlier{
+        color:whitesmoke;
+    }
+
+    /* make one of it taller */
+    .longer{
+        height: 45px;
+    }
+
+    .longest{
+        height: 70px;
+    }
+    .changec{
+        color: greenyellow;
+    }
+</style>
+
+<!-- when there is a conflic, ID will win!  -->
+<!-- inline CSS will be the highest priority -->
+<body>
+    <div></div>
+    <p>Body is great </p>
+    <p class="a" class= "changec">Body is great </p>
+    <p class= "longest">Body is great </p>
+    <p class="longer" id="outlier" >Body is great </p>
+    <p>Body is great </p>
+</body>
+</html>

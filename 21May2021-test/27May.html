@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3</title>
+</head>
+<!-- Internal CSS uses style  -->
+<!-- applies to everything -->
+
+<style>
+/* p{
+    color:white;
+    background-color: purple;
+
+} */
+/* Define your elements in the style parameter, and define the divs at the body */
+/* Order of priority (highest priority/uniqueness) Id > class> element */
+/* if you only want one particular thing to be X, use class/id, if all elements follow same style, then use element (div) */
+    div{
+        height: 20px;
+        width: 20px;
+        background-color: royalblue;
+
+    }
+    
+    /* Call out ID "#" */
+    #box-1{
+        height: 100px;
+        width: 100px;
+        background-color: salmon;
+    }
+/* call out class using "."*/
+    .general{
+        height: 100px;
+        width: 100px;
+        background-color: rebeccapurple;
+    }
+
+    #box-2{
+        height: 40px;
+        width:20px;
+        background-color: skyblue;
+    }
+
+    .trial{
+        height: 20px;
+        width: 20px;
+        background-color: green;
+    }
+</style>
+
+<!-- to call out your id/class/element, define them in the divs in the body for them to be visible -->
+<body>
+    <p>
+        Normal <br>
+        htestas
+    </p>
+    <div id="box-1" class= "general">
+        Sample
+    </div>
+
+<!-- Test  -->
+    <!-- the rest of the div will be blue, with height and width of 20px -->
+    <div></div>
+    <div></div>
+    <!-- class.background-colour green -->
+    <div class="trial"></div>
+    <div></div>
+    <!-- id. change the height to 40px -->
+    <div id="box-2"></div>
+
+</body>
+</html>
