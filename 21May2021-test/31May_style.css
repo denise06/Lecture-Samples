@@ -1,0 +1,23 @@
+/* for more practice: https://flexboxfroggy.com/ */
+
+/* Parent */
+.bigp {
+    background-color: blue;
+    /* flexwrap will try to move the child around and fit into the screen dimensions */
+    display: flex;
+    /* how you want to arrange your childs, row/column */
+    flex-direction: row-reverse;
+    /* space around is for each child */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* if not enough height, cannot move/center nicely */
+    align-content: center;
+    height: 100px;
+}
+
+/* child */
+
+.items{
+    background-color:cornsilk;
+    margin:20px;
+}

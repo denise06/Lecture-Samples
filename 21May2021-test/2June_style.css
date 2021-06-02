@@ -1,0 +1,70 @@
+.box{
+    height:60px;
+    width: 60px;
+    background-color: blue;
+    /* need to define the position element */
+    position: relative;
+    animation-name: move-box;
+    animation-duration: 5s;
+    animation-fill-mode:forwards;
+}
+/* ANIMATION */
+/* key frames are CSS in CSS, defines the CSS aka the box */
+/* can animate image too, using img */
+/* go to giphy, click embed, copy the html code */
+
+@keyframes move-box {
+    0%{
+        left:0;
+        top:0;
+        background-color: salmon;
+        transform: rotate(360deg)
+    }
+
+    50%{
+        left:500px;
+        top: 0;
+        background-color:silver;
+        transform: rotate(0deg);
+    }
+    100%{
+        down:700px;
+        top: 500px;
+        background-color:seagreen
+    }
+}
+
+/* transition */
+/* used for seudo class */
+
+.trans {
+    height: 100px;
+    width: 100px;
+    background-color: steelblue;
+    /* transition property focus on the element u define */
+    /* you can change multiple by adding "," */
+    transition-property: background-color, height;
+    transition-duration: 5s;
+}
+
+.trans:hover{
+    background-color: purple;
+    height: 300px;
+}
+
+/* Media Query */
+/* start with max width and add min width in */
+/* when the width is less than 600, the colour is rosy brown, otherwise it's navy */
+/* rosy brown<x<navy */
+@media screen and (max-width:600px){
+    body{
+        background-color: rosybrown;
+    }
+}
+
+@media screen and (min-width:600px){
+    body{
+        background-color: navy;
+    }
+}
+

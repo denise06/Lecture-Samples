@@ -8,12 +8,15 @@ p{
     height: 100px;
     width: 100px;
     background-color: sandybrown;
+    /* top right bottom left */
+    margin:10px 20px 30px 40px; 
     position: relative;
     /* relative to current position */
-    left: 0px;
+    left: 5px;
     border-color: gray;
-    border-style: solid;
+    border-style: dashed;
     border-width: 2px;
+    /* or botder: gray 10px dashed */
 /* top right, bottom, left */
     padding :10px 0px 10px;
     background-color: blue
