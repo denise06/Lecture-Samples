@@ -1,0 +1,81 @@
+.navbar-brand > img{
+    height: 50px ;
+    /* to separate the two logo */
+    margin-left: 20px;
+}
+
+.nav-link{
+    color:rgba(0,0,0,0.5);
+}
+
+.nav-link:hover{
+    color: rgb(254, 177, 83) !important;
+}
+
+.btn{
+    border-radius: 24px;
+    padding: 5px 30px;
+    border: coral;
+}
+
+.btn-orange {
+    color: #fff;
+    background-color: #ff884a;
+    border-color: #ff884a;
+}
+
+.btn-orange:hover {
+    background: rgb(214, 120, 5);
+    color: white;
+}
+
+/* hero image styling*/
+main{
+    /* careful, vh not px */
+    /* vh	Relative to 1% of the height of the viewport* */
+    /* px is an absolute size */
+    height: 80vh;
+    background-image: url('7June_images/mfs-hero.jpeg');
+    background-size: cover;
+    background-position:center-top;
+}
+/* define where u want the overlayed words to be at */
+/* how many % away from the top, the higher, the more it gets pushed down */
+.overlay{
+    position:relative;
+    top:53%;
+    height: 48%;
+    background-image: linear-gradient(rgba(238, 215, 180, 0), rgba(233, 150, 27, 0.865));
+/* image too zoomed in, bad sizing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* style the div in the overlay class to be center of the page */
+/* the para words should also be center */
+/* div position is respective to the overlay dimensions */
+.overlay >div {
+    width: 60%;
+    /* white fonts */
+    color:white;
+    /* align text center */
+    text-align: center;
+}
+
+/* column styling */
+#width-70{
+    width: 100%;
+}
+
+.right-image{
+    height: 300px;
+    width: 300px;
+    background-image: url(7June_images/mfs_rightpic.jpeg);
+    /* background-color: cornflowerblue; */
+    background-size: cover;
+    background-position: center;
+}
+
+.ht-100 {
+    height: 100vh;
+}

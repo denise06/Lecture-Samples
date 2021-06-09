@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="7June_style.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>7June MFS replicate</title>
+  </head>
+  <body>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+    <!-- Nav Bar from bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- nav bar words templae at the top left  -->
+          <a class="navbar-brand" href="#">
+              <img src="7June_images/mfs_logo.png" alt = "My first schol logo">
+              <img src="7June_images/ntuc_logo.png" alt = "ntuc logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- p-4 adding padding 4 thoughout any media size -->
+            <!-- p-md-4 add padding 4 to medium media size and above -->
+            
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">The MFS Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Curriculum</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Admission
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Infant</a></li>
+                  <li><a class="dropdown-item" href="#">childcare</a></li>
+                  <!-- divider for the dropdown -->
+                  <li><hr class="dropdown-divider"></li> 
+                  <li><a class="dropdown-item" href="#">Kindergarten</a></li>
+                </ul>
+              </li>
+            </ul>
+                <!-- Class that's disabled, a link that's styled to make it look disable -->
+              <!-- </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+            
+            <!-- form is the one for search  -->
+            <!-- dflex for flexbox container -->
+            <form class="d-flex">
+                <!-- Remove the search bar since mfs website don't have -->
+                <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+              <button class="btn btn-orange" type="submit">Register</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+      <!-- End of Nav Bar from bootstrap -->
+       
+   
+    <!-- hero image -->
+    <main>
+        <div class="overlay">
+            <div>
+                <h1>Joy In learning coding</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae similique placeat magni animi distinctio provident maxime earum dolore aspernatur itaque. Repellendus, fugit laboriosam error velit odio quaerat tenetur dignissimos magni!
+                </p>
+            </div>
+        </div>
+    </main>
+    <!-- ENd of hero image -->
+    
+
+    <!-- column system -->
+    <!-- mt: margin top -->
+    <!-- continainter-fluid for full width container spanning entire viewport -->
+    <section class="container-fluid mt-5">
+      <div class= "row">
+        <!-- left column -->
+        <!-- py:pading top & bottom  -->
+        <!-- px: padding left & right -->
+        <!-- Apply display utilities to create a flexbox container and 
+          transform direct children elements into flex items. -->
+        <!-- col-12 means take up the whole width -->
+        <!-- sm-6 means half half with the two columns -->
+        <div  class="col-12 col-sm-6
+                py-5 px-3 
+                d-flex 
+                justify-content-sm-end
+                align-items-center">
+
+                <div class='width-70'>
+                    <h2>REWRITING THE RULES</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis corporis deleniti ipsa unde cumque dolore laboriosam dignissimos nobis itaque repellendus maiores sit ipsum doloribus atque, dicta ab incidunt tempore!</p>
+                    <div class="btn btn-orange">Register</div>
+                    <div class="btn btn-danger">Contact Us</div>
+                </div>                    
+        </div>
+  
+      
+          <!--right column   -->
+          <div class="col-12 col-sm-6
+                d-flex 
+                justify-content-center justify-content-sm-start">
+
+                <div class="right-image rounded-circle">
+                    <!-- <img src="images/mfs-hero.jpeg" alt="" class="rounded-circle"> -->
+               </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="ht-100"></div>
+
+    
+    
+    <!-- For basic concepts (pre website building) -->
+         <!-- .d-{value} for xs
+                .d-{breakpoint}-{value} for sm, md, lg, and xl. -->
+            <!-- Hello world always on the right (md-end) until you reach breaking point (center)   -->
+            <!-- me-auto: right side pushing the header, MS for left  -->
+            <!-- <div>
+                <h1 class ="text-primary
+                    bg-warning
+                    text-center text-md-end"> Hello, world!</h1>
+                </div>
+           <div>
+               <div class="col-2 bg-danger">
+                column 1
+               </div>
+               <div class= "col-8 col-md-10 col-lg-8bg-warning">
+                <p class="text-right">
+                    <span class="fw-bold">Loream Ipsum</span>, dolor sit amet consectetur, adipisicing elit. Velit delectus nemo corporis odit nesciunt non beatae vel. Iusto nulla eligendi earum ut molestias laudantium ab reiciendis dolores at, culpa veniam!
+                </p>
+               </div>
+               <div class="col-12 col-md-2 bg-success">
+                   column3
+               </div>
+           </div> -->
+
+
+
+  </body>
+</html>
